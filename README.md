@@ -15,7 +15,6 @@ Github action to publish messages to RabbitMQ
           MESSAGE: "Test message"
           QUEUENAME: "test-rabbit-queue"
           HEADERS: "test-header1:testheader1val;test-header2:testheader2val"
-        env:
           RABBITMQ_HOST: ${{ secrets.RABBITMQ_HOST }}
           RABBITMQ_VHOSTNAME: ${{ secrets.RABBITMQ_VHOSTNAME }}
           RABBITMQ_USERNAME: ${{ secrets.RABBITMQ_USERNAME }}
