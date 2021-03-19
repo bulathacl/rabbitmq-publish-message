@@ -10,7 +10,7 @@ Github action to publish messages to RabbitMQ
 
 ```yml
 - name: Publish message to RabbitMQ
-        uses: bulathacl/rabbitmq-publish-message!v1.0.0
+        uses: bulathacl/rabbitmq-publish-message@v1.0.0
         with:
           MESSAGE: "Test message"
           QUEUENAME: "test-rabbit-queue"
