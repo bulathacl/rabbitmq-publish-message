@@ -1,0 +1,28 @@
+name: "Publish RabbitMQ Message with Headers"
+author: "Chandula Bulathsinhala"
+description: "Send a RabbitMQ Message with Headers via GitHub Actions"
+inputs:
+  MESSAGE:
+    description: "The message you want to send."
+    required: true
+  QUEUENAME:
+    description: "The name of the queue you are sending to."
+    required: true
+  HEADERS:
+    description: "The message headers. This should be in the following format to represent headers and its values, <headerName1>:<headerVal1>;<headerName2>:<headerVal2>"
+    required: false  
+  RABBITMQ_HOST:
+    description: "RabbitMQ host name along with port. eg: rabbithost:5127 or rabbithost"
+    required: true
+  RABBITMQ_VHOSTNAME:
+    description: "RabbitMQ vhost name."
+    required: false
+  RABBITMQ_USERNAME:
+    description: "RabbitMQ username."
+    required: true
+  RABBITMQ_PASSWORD:
+    description: "RabbitMQ password."
+    required: true
+runs:
+  using: "node12"
+  main: "dist/index.js"
