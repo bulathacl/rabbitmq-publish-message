@@ -34,7 +34,7 @@ Github action to publish messages to RabbitMQ
 
 ### `HEADERS`
 
-**optional** The message headers. This should be in the following format to represent headers and its values, <headerName1>:<headerVal1>;<headerName2>:<headerVal2>
+**optional** The message headers. This should be in the following format to represent headers and its values, headerName1:headerVal1;headerName2:headerVal2
 
 ### `RABBITMQ_HOST`
 
